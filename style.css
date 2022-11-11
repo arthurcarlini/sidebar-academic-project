@@ -6,13 +6,13 @@ body {
     /* height: 100vh; */
 }
 
-#navbar {
+#sidebar {
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    justify-content: space-between;
     margin: 0;
-    padding: 0 15px;
+    height: 100vh;
     width: 20%;
     background-color: #8EA8BF;
     color: #fff;
@@ -20,10 +20,13 @@ body {
 
 #content {
     margin-left: 0.8rem;
+    padding: 15px;
+
 }
 
-#content h1 {
-    margin: 0;
+#content #header {
+    display: flex;
+    justify-content: space-between;
 }
 
 #content ul {
@@ -31,10 +34,19 @@ body {
 }
 
 #content ul li {
+    display: flex;
     list-style: none;
     padding: 15px;
-    margin-bottom: 0.8rem;
+    margin-bottom: .8rem;
     border-radius: 25px;
+}
+
+#content li:hover {
+    background-color: #3B4B59;
+}
+
+#sidebar_search {
+    background-color: #3B4B59;
 }
 
 #content a {
@@ -42,7 +54,15 @@ body {
     color: #fff;
 }
 
-#content li:hover {
+#content input  {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: #fff;
     background-color: #3B4B59;
 }
 
+#content .sidebar_image {
+    margin-right: .8rem;
+}
