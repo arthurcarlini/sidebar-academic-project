@@ -54,7 +54,7 @@ body {
     color: #fff;
 }
 
-#content input  {
+#content input {
     font-family: 'Poppins', sans-serif;
     border: none;
     outline: none;
@@ -65,4 +65,28 @@ body {
 
 #content .sidebar_image {
     margin-right: .8rem;
+}
+
+
+#logout {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3B4B59;
+}
+
+#user_info {
+    display: flex;
+}
+
+#user_info h2,
+p {
+    margin: 0;
+}
+
+#user_image {
+    margin-right: .8rem;
+    border-radius: 20px;
+    height: 65px;
+    width: 65px;
 }
