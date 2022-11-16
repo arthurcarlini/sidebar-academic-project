@@ -104,12 +104,29 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#closed_sidebar_content img:last-child {
-    background-color: green;
+    background-color: #8EA8BF;
 }
 
 #closed_sidebar img {
-    width: 30px;
+    width: 1.6rem;
+    margin: 1rem 0;
+}
+
+#closed_sidebar img:nth-child(2) {
+    padding: .8rem;
+    border-radius: 1rem;
+    background-color: #BDCADB;
+}
+
+#closed_sidebar_logout img {
+    background-color: #BDCADB;
+}
+
+#closed_sidebar_logout {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
 }
