@@ -3,130 +3,49 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    /* height: 100vh; */
-}
-
-#sidebar {
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    height: 100vh;
-    width: 20%;
-    background-color: #8EA8BF;
-    color: #fff;
-    display: none;
 }
-
-#content {
-    margin-left: 0.8rem;
-    padding: 15px;
-
-}
-
-#content #header {
-    display: flex;
-    justify-content: space-between;
-}
-
-#content ul {
-    padding: 0;
-}
-
-#content ul li {
-    display: flex;
-    list-style: none;
-    padding: 15px;
-    margin-bottom: .8rem;
-    border-radius: 25px;
-}
-
-#content li:hover {
-    background-color: #3B4B59;
-}
-
-#sidebar_search {
-    background-color: #3B4B59;
-}
-
-#content a {
+    
+a {
     text-decoration: none;
     color: #fff;
 }
 
-#content input {
-    font-family: 'Poppins', sans-serif;
-    border: none;
-    outline: none;
-    border-radius: 25px;
-    color: #fff;
-    background-color: #3B4B59;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-#content .sidebar_image {
-    margin-right: .8rem;
+li {
+    height: 25px;
+    margin: 1rem .8rem;
 }
 
-#logout {
-    padding: 10px;
+.menu {
     display: flex;
     justify-content: space-between;
-    background-color: #3B4B59;
+    margin: .8rem;
 }
 
-#user_info {
+#sidebar {
     display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    width: 20%;
+    height: 100%;
+    background-color: #232625;
 }
 
-#user_info h2,
-p {
-    margin: 0;
-}
-
-#user_image {
+#sidebar ul img {
     margin-right: .8rem;
-    border-radius: 20px;
-    height: 65px;
-    width: 65px;
 }
 
-/* closed sidebar */
-
-#closed_sidebar {
+#closed-sidebar {
+    display: none;
+    flex-direction: column;
+    padding: 0 10px;
+    width: 5%;
     height: 100vh;
-    width: 7.5vh;
-    /* display: none; */
-}
-
-#closed_sidebar_content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #8EA8BF;
-}
-
-#closed_sidebar img {
-    width: 1.6rem;
-    margin: 1rem 0;
-}
-
-#closed_sidebar img:nth-child(2) {
-    padding: .8rem;
-    border-radius: 1rem;
-    background-color: #BDCADB;
-}
-
-#closed_sidebar_logout img {
-    background-color: #BDCADB;
-}
-
-#closed_sidebar_logout {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
+    background-color: #232625;
 }

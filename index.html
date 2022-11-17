@@ -13,56 +13,39 @@
 </head>
 
 <body>
-
-    <div id="closed_sidebar">
-        <div id="closed_sidebar_content">
-            <img src="images/menu.svg" alt="">
-            <img src="images/search.svg" alt="">
-            <img src="images/grid.svg" alt="">
-            <img src="images/pet.svg" alt="">
-            <img src="images/user.svg" alt="">
-            <img src="images/vet.svg" alt="">
-            <img src="images/settings.svg" alt="">
-            <div id="closed_sidebar_logout">
-                <img src="images/log-out.svg" alt="">
-            </div>
+    <div id="closed-sidebar">
+        <div class="menu">
+            <button onclick="openSidebar()"><img src="images/menu.svg" alt=""></button>
         </div>
-    </div>
-
-    <div id="sidebar">
-
-        <div id="content">
-
-            <div id="header">
-                <img id="sidebar_logo" src="images/logo.svg" alt="">
-                <img id="menu" src="images/menu.svg" alt="">
-            </div>
-
-            <ul>
-                <li id="sidebar_search"><img src="images/search.svg" alt=""><input type="text" placeholder="Search">
-                </li>
-                <li><img class="sidebar_image" src="images/grid.svg" alt=""><a href="">Dashboard</a></li>
-                <li><img class="sidebar_image" src="images/pet.svg" alt=""><a href="">Pets</a></li>
-                <li><img class="sidebar_image" src="images/user.svg" alt=""><a href="">Clients</a></li>
-                <li><img class="sidebar_image" src="images/vet.svg" alt=""><a href="">Vets</a></li>
-                <li><img class="sidebar_image" src="images/settings.svg" alt=""><a href="">Settings</a></li>
-            </ul>
-
-        </div>
-
+        <ul>
+            <li><img class="search" src="images/search.svg" alt=""></li>
+            <li><a href="#"><img src="images/grid.svg" alt=""></a></li>
+            <li><a href="#"><img src="images/pet.svg" alt=""></a></li>
+            <li><a href="#"><img src="images/user.svg" alt=""></a></li>
+            <li><a href="#"><img src="images/vet.svg" alt=""></a></li>
+            <li><a href="#"><img src="images/settings.svg" alt=""></a></li>
+        </ul>
         <div id="logout">
-            <div id="user_info">
-                <img id="user_image" src="images/photo.jpg" alt="">
-                <div>
-                    <h2>Lett</h2>
-                    <p>Veterinária</p>
-                </div>
-            </div>
-            <img id="logout_image" src="images/log-out.svg" alt="">
+            <img src="images/log-out.svg" alt="">
         </div>
-
     </div>
-
+    <div id="sidebar">
+        <div class="menu">
+            <img src="images/logo.svg" alt="">
+            <button onclick="closeSidebar()"><img src="images/menu.svg" alt=""></button>
+        </div>
+        <ul>
+            <li><img class="search" src="images/search.svg" alt=""></li>
+            <li><a href="#"><img src="images/grid.svg" alt="">Dashboard</a></li>
+            <li><a href="#"><img src="images/pet.svg" alt="">Pets</a></li>
+            <li><a href="#"><img src="images/user.svg" alt="">Clients</a></li>
+            <li><a href="#"><img src="images/vet.svg" alt="">Vets</a></li>
+            <li><a href="#"><img src="images/settings.svg" alt="">Settings</a></li>
+        </ul>
+        <div id="logout">
+            <img src="images/log-out.svg" alt="">
+        </div>
+    </div>
 </body>
 <script src="script.js"></script>
 
