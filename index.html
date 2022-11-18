@@ -14,35 +14,42 @@
 
 <body>
     <div id="closed-sidebar">
-        <div class="menu">
-            <button onclick="openSidebar()"><img src="images/menu.svg" alt=""></button>
+        <div>
+            <div class="menu">
+                <button onclick="openSidebar()"><img src="images/menu.svg" alt=""></button>
+            </div>
+            <ul>
+                <li class="search"><img src="images/search.svg" alt=""></li>
+                <li><a href="#"><img src="images/grid.svg" alt=""></a></li>
+                <li><a href="#"><img src="images/pet.svg" alt=""></a></li>
+                <li><a href="#"><img src="images/user.svg" alt=""></a></li>
+                <li><a href="#"><img src="images/vet.svg" alt=""></a></li>
+                <li><a href="#"><img src="images/settings.svg" alt=""></a></li>
+            </ul>
         </div>
-        <ul>
-            <li class="search"><img src="images/search.svg" alt=""></li>
-            <li><a href="#"><img src="images/grid.svg" alt=""></a></li>
-            <li><a href="#"><img src="images/pet.svg" alt=""></a></li>
-            <li><a href="#"><img src="images/user.svg" alt=""></a></li>
-            <li><a href="#"><img src="images/vet.svg" alt=""></a></li>
-            <li><a href="#"><img src="images/settings.svg" alt=""></a></li>
-        </ul>
-        <div id="logout">
-            <img src="images/log-out.svg" alt="">
-        </div>
+        <img id="closed-logout" src="images/log-out.svg" alt="">
     </div>
     <div id="sidebar">
-        <div class="menu">
-            <img src="images/logo.svg" alt="">
-            <button onclick="closeSidebar()"><img src="images/menu.svg" alt=""></button>
+        <div class="content">
+            <div class="menu">
+                <img src="images/logo.svg" alt="">
+                <button onclick="closeSidebar()"><img src="images/menu.svg" alt=""></button>
+            </div>
+            <ul>
+                <li class="search"><img src="images/search.svg" alt=""><input type="text"></li>
+                <li><a href="#"><img src="images/grid.svg" alt="">Dashboard</a></li>
+                <li><a href="#"><img src="images/pet.svg" alt="">Pets</a></li>
+                <li><a href="#"><img src="images/user.svg" alt="">Clients</a></li>
+                <li><a href="#"><img src="images/vet.svg" alt="">Vets</a></li>
+                <li><a href="#"><img src="images/settings.svg" alt="">Settings</a></li>
+            </ul>
         </div>
-        <ul>
-            <li class="search"><img src="images/search.svg" alt=""><input type="text"></li>
-            <li><a href="#"><img src="images/grid.svg" alt="">Dashboard</a></li>
-            <li><a href="#"><img src="images/pet.svg" alt="">Pets</a></li>
-            <li><a href="#"><img src="images/user.svg" alt="">Clients</a></li>
-            <li><a href="#"><img src="images/vet.svg" alt="">Vets</a></li>
-            <li><a href="#"><img src="images/settings.svg" alt="">Settings</a></li>
-        </ul>
         <div id="logout">
+            <img id="user-image" src="images/photo.jpg" alt="">
+            <div>
+                <p>Lett</p>
+                <p>Veterinária</p>
+            </div>
             <img src="images/log-out.svg" alt="">
         </div>
     </div>
